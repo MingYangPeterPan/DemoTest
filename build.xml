@@ -4,9 +4,9 @@
        <echo>Building the .jar file.</echo>
     </target>
     <target name="compile" description="Compilation target">
-       <javac srcdir="${basedir}/src/antTest" />
+       <javac srcdir="${basedir}/src/antTest" includeantruntime="on" />
     </target>
     <target name="compress" description="Compression target">
-       <jar jarfile="HelloAnt.jar" basedir="${basedir}/src/antTest"includes="*.class" />
+       <jar jarfile="HelloAnt.jar" basedir="${basedir}/src/antTest" includes="*.class" />
     </target>
 </project>
