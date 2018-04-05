@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project default="main" basedir=".">
+    <target name="main" depends="compile, compress" description="Main target">
+       <echo>Building the .jar file.</echo>
+    </target>
+    <target name="compile" description="Compilation target">
+       <javac srcdir="${basedir}/src/antTest" />
+    </target>
+    <target name="compress" description="Compression target">
+       <jar jarfile="HelloAnt.jar" basedir="${basedir}/src/antTest"includes="*.class" />
+    </target>
+</project>
