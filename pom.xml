@@ -16,11 +16,23 @@
       </plugin>
     </plugins>
   </build>
+  <repositories>
+      <!-- Activiti的仓库 -->
+      <repository>
+          <id>Activiti</id>
+          <url>http://maven.alfresco.com/nexus/content/repositories/activiti</url>
+      </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
+    </dependency>
+    <dependency>
+        <groupId>org.activiti</groupId>
+        <artifactId>activiti-engine</artifactId>
+        <version>6.0.0</version>
     </dependency>
   </dependencies>
 </project>
